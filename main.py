@@ -31,8 +31,7 @@ async def read_root() -> Message:
     # validating it against the `response_model` defined in the decorator.
     return Message(message="Hello World!")
 
-# You can add more endpoints here if you want to expand your API later.
-# For example:
+# Example of a path variable and a query parameter:
 @app.get("/items/{item_id}", response_model=Item)
 async def read_item(item_id: int, q: str | None = None) -> Item:
     """
