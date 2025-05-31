@@ -15,7 +15,7 @@ class Message(BaseModel):
 class Item(BaseModel):
     item_id: int
     query_param: str | None = None # Use | None for optional types in Python 3.10+
-
+    
 # Define a GET endpoint for the root URL ("/").
 # The `@app.get("/")` decorator tells FastAPI that the `read_root` function
 # should be executed when an HTTP GET request is made to the root path.
