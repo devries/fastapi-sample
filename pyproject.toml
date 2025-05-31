@@ -14,3 +14,4 @@ dependencies = [
 pythonVersion = "3.12"
 venvPath = "."
 venv = ".venv"
+exclude = [".venv"]
